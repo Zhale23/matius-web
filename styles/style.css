@@ -91,6 +91,10 @@
 .services-start-title{
     text-align: center;
     background-color: rgba(47, 72, 58, 0.647);
+    height: 35%;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
 }
 
 .services-start-title h5{
@@ -108,10 +112,12 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.351);
 }
 
-.services-container{
+/* .services-container{
     background-color: rgba(47, 72, 58, 0.647);
-    height: 30%;
-    top: 0;
+    height: 29.8%;
+    height: 166px;
     text-align: center;
-}
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+} */
 
