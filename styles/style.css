@@ -1,6 +1,21 @@
 
-/*top background styles*/
 
+.logo-matius{
+    background-color: white;
+    text-align: center;
+    width: 12%;
+    height: 35vh;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    position: absolute;
+    left: 44%;
+}
+.logo-matius img{
+    width: 75%;
+    margin-top: 50%;
+}
+
+/*top background styles*/
 .top-background-container{
     background-image: url('images/background-blur.jpg');
     background-size: cover;
