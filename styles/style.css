@@ -148,7 +148,17 @@
     font-size: 1.09em;
     font-weight: 300;
 }
-
+.service img{
+    width: 44px;
+    padding-bottom: 2px;
+}
+.s3 img{
+    margin-top: 2px;
+    width: 58px;
+}
+.s2 img{
+    width: 40px;
+}
 .s1, .s2{
     border-right: 1px solid white;
 }
