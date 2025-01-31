@@ -4,15 +4,17 @@
     background-color: white;
     text-align: center;
     width: 12%;
-    height: 35vh;
+    height: 35%;
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 200px;
     position: absolute;
     left: 44%;
+    align-content: end;
 }
 .logo-matius img{
     width: 75%;
-    margin-top: 50%;
+    height: auto;
+    margin-bottom: 10%;
 }
 
 /*top background styles*/
@@ -58,7 +60,6 @@
 .nav-link:hover{
     color: rgb(9, 132, 60);
 }
-
 .menu-container{
     width: 95%;
     padding-top: 55px;
@@ -77,6 +78,7 @@
     transition: background-color 0.3s ease-in-out;
 }
 
+/*offcanvas menu styles*/
 .offcanvas .navbar-nav .nav-link {
     background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 15px;
@@ -103,6 +105,8 @@
     align-items: flex-start;
 }
 
+/*services title container*/
+
 .services-start-title{
     text-align: center;
     background-color: rgba(47, 72, 58, 0.647);
@@ -111,7 +115,6 @@
     border-bottom-left-radius: 25px;
 
 }
-
 .services-start-title h5{
     background-color: #17a454;
     color: white;
@@ -132,6 +135,7 @@
     width: 60%;
 }
 
+/*services icons styles*/
 .service{
     display: flex;
     flex-direction: column;
@@ -149,8 +153,10 @@
     border-right: 1px solid white;
 }
 
+/*whatsAppp icon styles*/
 .logo-whats{
     position: fixed;
+    cursor: pointer;
     background-color: rgb(0, 128, 62);
     padding: 8px;
     border-radius: 100px;
@@ -160,4 +166,37 @@
     bottom: 20px;
     right: 100px;
     box-shadow: 7px 6px 6px 3px rgba(0, 0, 0, 0.315);
+}
+
+/*we are Matius styles*/
+.we-are-container{
+    background-color: #e5ffbd;
+    /* color: #8fb16f; */
+}
+
+.we-are-text-container{
+    margin-top: 7%;
+}
+
+.we-are-text-container{
+    color: #6c7d44;
+}
+.we-are-text-container p{
+    text-align: justify;
+    margin-top: 40px;
+    letter-spacing: 0px;
+}
+.we-are-title{
+    padding-bottom: 40px;
+    justify-content: center;
+}
+.somos{
+    font-weight: 300;
+}
+.border-bottom{
+    background-color: #6c7d44;
+    height: 0.7vh;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50px;
 }
