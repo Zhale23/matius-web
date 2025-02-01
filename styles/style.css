@@ -153,7 +153,7 @@
     padding-bottom: 2px;
 }
 .s3 img{
-    margin-top: 2px;
+    margin-top: 1.5px;
     width: 58px;
 }
 .s2 img{
@@ -167,21 +167,17 @@
 .logo-whats{
     position: fixed;
     cursor: pointer;
-    background-color: rgb(0, 128, 62);
-    padding: 8px;
-    border-radius: 100px;
-    width: 60px;
-    height: 60px;
-    z-index: 1000;
-    bottom: 20px;
+    width: 75px;
+    z-index: 2000;
+    bottom: 10px;
     right: 100px;
-    box-shadow: 7px 6px 6px 3px rgba(0, 0, 0, 0.315);
 }
 
 /*we are Matius styles*/
 .we-are-container{
     background-color: #e5ffbd;
     /* color: #8fb16f; */
+    /* border-bottom: solid 5px black; */
 }
 
 .we-are-text-container{
@@ -210,3 +206,115 @@
     margin: 0 auto;
     border-radius: 50px;
 }
+
+.street-img img{
+    width: 80%;
+}
+
+
+/*Our services styles*/
+
+.our-services-container{
+    background-color: rgb(255, 255, 255);
+    height: 200vh;
+}
+.our-services-green-div{
+    background-color: #17a454;
+    height: 70vh;
+    text-align: center;
+}
+.our-services-green-div .border-bottom{
+    background-color: white;
+    height: 1.4px;
+    border: none;
+    margin-top: 15px;
+}
+.our-services-green-div h4{
+    padding-top: 70px;
+    font-weight: 100;
+    color: white;
+    font-size: 1.9em;
+}
+
+.services-cards{
+    /* background-color: #fff; */
+    position: absolute;
+    top: 210%;
+    left: 30px;
+    right: 30px;
+    z-index: 1000;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*cards styles*/
+
+.transporte-de-carga-container, .manipulacion-de-carga-container, .mensajeria-container{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.transporte-de-carga-container{
+    background-image: url('images/transporte-de-carga-blur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    background-position: bottom;
+}
+
+.manipulacion-de-carga-container{
+    background-image: url('images/manipulacion-de-carga-blur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    background-position: bottom;
+}
+
+.mensajeria-container{
+    background-image: url('images/mensajeria-blur.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    background-position: bottom;
+}
+
+.transporte-de-carga-container .row, .manipulacion-de-carga-container .row, .mensajeria-container .row{
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-arrow-container{
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.title-and-img img{
+    width: 90%;
+    border-radius: 25px;
+}
+
+.title-and-img h3{
+    margin-top: 10%;
+    font-weight: 200;
+    color: #17a454;
+    padding-bottom: 2%;
+}
+
+.title-and-img{
+    width: 100%;
+}
+.info{
+    font-weight: 300;
+    color: #515e34;
+    font-size: 1.15em;
+    width: 40%;
+}
+
+.info h4{
+    font-weight: 200;
+    color: black;
+}
+
+/*arrow styles*/
