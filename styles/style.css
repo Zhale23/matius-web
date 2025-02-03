@@ -58,7 +58,9 @@
 }
 
 .nav-link:hover{
-    color: rgb(9, 132, 60);
+    scale: 1.1;
+    border-bottom: 2px solid green;
+    color: rgb(9, 17, 132);
 }
 .menu-container{
     width: 95%;
@@ -176,8 +178,8 @@
 /*we are Matius styles*/
 .we-are-container{
     background-color: #e5ffbd;
-    /* color: #8fb16f; */
-    /* border-bottom: solid 5px black; */
+    /* padding-bottom: 7%; */
+    /* height: 80%; */
 }
 
 .we-are-text-container{
@@ -191,6 +193,7 @@
     text-align: justify;
     margin-top: 40px;
     letter-spacing: 0px;
+    font-size: 1.15em;
 }
 .we-are-title{
     padding-bottom: 40px;
@@ -208,7 +211,7 @@
 }
 
 .street-img img{
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -220,8 +223,10 @@
 }
 .our-services-green-div{
     background-color: #17a454;
-    height: 70vh;
+    height: 60%;
     text-align: center;
+    position: absolute;
+    width: 100%;
 }
 .our-services-green-div .border-bottom{
     background-color: white;
@@ -230,21 +235,19 @@
     margin-top: 15px;
 }
 .our-services-green-div h4{
-    padding-top: 70px;
+    margin-top: 20px;
     font-weight: 100;
     color: white;
     font-size: 1.9em;
 }
 
 .services-cards{
-    /* background-color: #fff; */
-    position: absolute;
-    top: 210%;
     left: 30px;
     right: 30px;
-    z-index: 1000;
     width: 80%;
     margin: 0 auto;
+    position: absolute;
+    margin-top: 13%;
 }
 
 /*cards styles*/
@@ -252,6 +255,7 @@
 .transporte-de-carga-container, .manipulacion-de-carga-container, .mensajeria-container{
     width: 100%;
     margin-bottom: 5%;
+    box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.187);
 }
 .transporte-de-carga-container{
     background-image: url('images/transporte-de-carga-blur.jpg');
@@ -291,7 +295,7 @@
 }
 
 .title-and-img img{
-    width: 90%;
+    width: 100%;
     border-radius: 25px;
 }
 
@@ -303,13 +307,17 @@
 }
 
 .title-and-img{
-    width: 100%;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 .info{
     font-weight: 300;
     color: #515e34;
     font-size: 1.15em;
     width: 40%;
+    margin-right: 5%;
 }
 
 .info h4{
@@ -318,3 +326,7 @@
 }
 
 /*arrow styles*/
+.arrow img{
+    width: 60px;
+    margin-top: 170%;
+}
