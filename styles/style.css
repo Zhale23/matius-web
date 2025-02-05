@@ -106,16 +106,24 @@
     flex-direction: column;
     align-items: flex-start;
 }
+.navar-toggler {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.navar-toggler:hover{
+    scale: 1.2;
+}
 
 /*services title container*/
 
 .services-start-title{
     text-align: center;
     background-color: rgba(47, 72, 58, 0.647);
-    height: 35%;
+    height: 35.1%;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-
 }
 .services-start-title h5{
     background-color: #17a454;
@@ -141,9 +149,11 @@
 .service{
     display: flex;
     flex-direction: column;
-    width: 30%;
-    margin: 0 auto;
     align-items: center;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 .service span{
     color: white;
@@ -188,15 +198,17 @@
 
 .we-are-text-container{
     color: #6c7d44;
+    justify-items: center;
 }
 .we-are-text-container p{
     text-align: justify;
-    margin-top: 40px;
+    margin-top: 5%;
     letter-spacing: 0px;
     font-size: 1.15em;
+    line-height: 1.25;
 }
 .we-are-title{
-    padding-bottom: 40px;
+    padding-bottom: 4%;
     justify-content: center;
 }
 .somos{
@@ -204,9 +216,8 @@
 }
 .border-bottom{
     background-color: #6c7d44;
-    height: 0.7vh;
+    height: 0.5vh;
     width: 200px;
-    margin: 0 auto;
     border-radius: 50px;
 }
 
@@ -217,9 +228,24 @@
 
 /*Our services styles*/
 
+.our-services-title{
+    padding-top: 25px;
+    padding: 3%;
+    text-align: center;
+    justify-items: center;
+    position: relative;
+    background-color: #17a454;
+}
+.our-services-title h4{
+    font-weight: 100;
+    color: white;
+    font-size: 1.5em;
+
+}
 .our-services-container{
     background-color: rgb(255, 255, 255);
-    height: 200vh;
+    width: 100%;
+    height: fit-content;
 }
 .our-services-green-div{
     background-color: #17a454;
@@ -228,32 +254,19 @@
     position: absolute;
     width: 100%;
 }
-.our-services-green-div .border-bottom{
-    background-color: white;
-    height: 1.4px;
-    border: none;
-    margin-top: 15px;
-}
-.our-services-green-div h4{
-    margin-top: 20px;
-    font-weight: 100;
-    color: white;
-    font-size: 1.9em;
+.services-cards{
+    position: relative;
+    width: 85%;
+    margin: 0% auto;
 }
 
-.services-cards{
-    left: 30px;
-    right: 30px;
-    width: 80%;
-    margin: 0 auto;
-    position: absolute;
-    margin-top: 13%;
-}
+
 
 /*cards styles*/
 
 .transporte-de-carga-container, .manipulacion-de-carga-container, .mensajeria-container{
     width: 100%;
+    height: 80%;
     margin-bottom: 5%;
     box-shadow: 0px 0px 55px rgba(0, 0, 0, 0.187);
 }
@@ -261,7 +274,7 @@
     background-image: url('images/transporte-de-carga-blur.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50px;
+    border-radius: 30px;
     background-position: bottom;
 }
 
@@ -269,7 +282,7 @@
     background-image: url('images/manipulacion-de-carga-blur.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50px;
+    border-radius: 30px;
     background-position: bottom;
 }
 
@@ -277,21 +290,22 @@
     background-image: url('images/mensajeria-blur.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50px;
+    border-radius: 30px;
     background-position: bottom;
 }
 
 .transporte-de-carga-container .row, .manipulacion-de-carga-container .row, .mensajeria-container .row{
     background-color: rgba(255, 255, 255, 0.76);
-    border-radius: 50px;
+    border-radius: 30px;
     align-items: center;
     justify-content: center;
+    height: 80%;
+    padding: 2%;
 }
 
 .img-arrow-container{
     justify-items: center;
     align-items: center;
-    padding-bottom: 10%;
 }
 
 .title-and-img img{
@@ -300,7 +314,6 @@
 }
 
 .title-and-img h3{
-    margin-top: 10%;
     font-weight: 200;
     color: #17a454;
     padding-bottom: 2%;
@@ -316,8 +329,6 @@
     font-weight: 300;
     color: #515e34;
     font-size: 1.15em;
-    width: 40%;
-    margin-right: 5%;
 }
 
 .info h4{
@@ -325,8 +336,61 @@
     color: black;
 }
 
+.info li, p{
+    font-weight: 350;
+    font-size: 1.08em;
+    line-height: 1;
+    width: 90%;
+}
+
+.justify-text{
+    text-align: justify;
+}
+
+.list{
+    line-height: 0.9;
+}
+
+.info li::marker {
+    font-size: 0.6em; /* Ajustar el tamaño de la viñeta */
+}
+
+
 /*arrow styles*/
 .arrow img{
-    width: 60px;
-    margin-top: 170%;
+    width: 25px;
+}
+.arrow{
+    margin-left: 4%;
+}
+
+
+
+/*ajustes*/
+
+/* Mejorar escalado de elementos */
+.logo-matius {
+    width: 12vw;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Sección de servicios responsiva */
+
+@media (max-width: 992px) {
+    .we-are-text-container {
+        padding-bottom: 5%;
+    }
+    .info {
+        font-size: 1em;
+    }
 }
