@@ -1,20 +1,31 @@
 
-
 .logo-matius{
     background-color: white;
     text-align: center;
-    width: 12%;
-    height: 35%;
+    width: 10vw;
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 200px;
     position: absolute;
-    left: 44%;
+    left: 50%;
+    transform: translateX(-50%);
     align-content: end;
 }
 .logo-matius img{
+    margin-top: 45%;
     width: 75%;
     height: auto;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+}
+
+.logo{
+    text-align: end;
+    width: 70%;
+}
+
+.logo img{
+    width: 35%;
+    border: solid rgb(255, 255, 255) 10px;
+    border-radius: 100px;
 }
 
 /*top background styles*/
@@ -24,9 +35,8 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 100vh;
-    /* filter: blur(10px); */
-    padding: 0;
+    height: min-content;
+    padding: 2.5% 0;
     margin: 0;
     align-content: center;
 }
@@ -38,7 +48,7 @@
 
 /*styles for the menu and services container*/
 .menu-services-container{
-    background-image: url('images/background-green-gradient.png');
+    background-image: url('images/RecursosPng/Asset 11.png');
     width: 91.5%;
     height: 89%;
     background-repeat: no-repeat;
@@ -62,12 +72,24 @@
     border-bottom: 2px solid green;
     color: rgb(9, 17, 132);
 }
+
 .menu-container{
-    width: 95%;
     padding-top: 55px;
     margin: 0 auto;
-    height: 65%;
+    width: 95%;
 }
+
+/* .menu-scroll{
+    position: absolute; 
+    top: 0;
+    width: 100%;
+    z-index: 5000;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    background-color: rgba(62, 128, 76, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+} */
 
 .offcanvas-end {
     background-color: rgb(62, 128, 76);
@@ -124,6 +146,9 @@
     height: 35.1%;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
+    margin-top: 40vh;
+    padding-bottom: 2%;
+
 }
 .services-start-title h5{
     background-color: #17a454;
@@ -180,7 +205,7 @@
     position: fixed;
     cursor: pointer;
     width: 75px;
-    z-index: 2000;
+    z-index: 2;
     bottom: 10px;
     right: 100px;
 }
@@ -188,8 +213,7 @@
 /*we are Matius styles*/
 .we-are-container{
     background-color: #e5ffbd;
-    /* padding-bottom: 7%; */
-    /* height: 80%; */
+    padding-bottom: 3%;
 }
 
 .we-are-text-container{
@@ -204,7 +228,7 @@
     text-align: justify;
     margin-top: 5%;
     letter-spacing: 0px;
-    font-size: 1.15em;
+    font-size: 1.2em;
     line-height: 1.25;
 }
 .we-are-title{
@@ -222,15 +246,18 @@
 }
 
 .street-img img{
-    width: 100%;
+    width: 27.5vh;
+    position: absolute;
+    z-index: 3;
 }
 
 
 /*Our services styles*/
 
 .our-services-title{
-    padding-top: 25px;
+    position: absolute;
     padding: 3%;
+    padding-top: 5%;
     text-align: center;
     justify-items: center;
     position: relative;
@@ -239,7 +266,14 @@
 .our-services-title h4{
     font-weight: 100;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.8em;
+}
+.our-services-title .border-bottom{
+    background-color: #ffffff;
+    border: none;
+    height: 1.7px;
+    width: 14%;
+    margin-top: 1.5%;
 
 }
 .our-services-container{
@@ -249,10 +283,11 @@
 }
 .our-services-green-div{
     background-color: #17a454;
-    height: 60%;
+    height: 25%;
     text-align: center;
     position: absolute;
     width: 100%;
+    border: solid 5px #17a454;
 }
 .services-cards{
     position: relative;
@@ -369,12 +404,6 @@
 /*ajustes*/
 
 /* Mejorar escalado de elementos */
-.logo-matius {
-    width: 12vw;
-    height: auto;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 .services-container {
     width: 100%;
@@ -393,4 +422,8 @@
     .info {
         font-size: 1em;
     }
+    .service{
+        border: none;
+    }
 }
+

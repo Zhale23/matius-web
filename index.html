@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container-all">
-        <div class="logo-matius d-md-block d-none">
+        <div class="logo-matius d-lg-block d-none">
             <img src="styles/images/matius-logo.avif" alt="">
         </div>
         <div class="top-background-container">
@@ -36,10 +36,13 @@
                             <div class="navbar-nav">
                               <a class="nav-link active" aria-current="page" href="#contact">Inicio</a>
                               <a class="nav-link" href="#weAre">Nosotros</a>
-                              <a class="nav-link" href="#">Servicios</a>
-                              <a class="nav-link" href="#">Contacto</a>
+                              <a class="nav-link" href="#services">Servicios</a>
+                              <a class="nav-link" href="#contact">Contacto</a>
                             </div>
                           </div>
+                          <div class="logo d-block d-lg-none">
+                            <img src="styles/images/matius-logo.avif" alt="">
+                        </div>
                           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
@@ -47,9 +50,10 @@
                             </div>
                             <div class="offcanvas-body">
                               <div class="navbar-nav flex-column">
-                                <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                                <a class="nav-link" href="#">Nosotros</a>
-                                <a class="nav-link" href="#">Conductores</a>
+                                <a class="nav-link active" aria-current="page" href="#contact">Inicio</a>
+                                <a class="nav-link" href="#weAre">Nosotros</a>
+                                <a class="nav-link" href="#services">Servicios</a>
+                                <a class="nav-link" href="#contact">Contacto</a>
                               </div>
                             </div>
                           </div>
@@ -99,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <div class="our-services-title">
+        <div class="our-services-title" id="services">
             <h4>Nuestros Servicios</h4>
             <div class="border-bottom"></div>
             </div>
@@ -111,7 +115,7 @@
                     <div class="row">
                         <div class="img-arrow-container col-lg-6 d-flex justify-content-center">
                             <div class="title-and-img mb-0 mb-lg-5">
-                                <h3>
+                                <h3 class="mt-4 mt-lg-0">
                                     Transporte de carga
                                 </h3>
                                 <img src="styles/images/transporte-de-carga.avif" alt="" class="mb-0 mb-lg-3">
@@ -146,7 +150,7 @@
                     <div class="row">
                         <div class="img-arrow-container col-lg-6 d-flex justify-content-center">
                             <div class="title-and-img mb-0 mb-lg-5">
-                                <h3>
+                                <h3 class="mt-4 mt-lg-0">
                                     Manipulación de carga
                                 </h3>
                                 <img src="styles/images/manipulacion-de-carga.avif" alt="" class="mb-0 mb-lg-3">
@@ -180,7 +184,7 @@
                     <div class="row">
                         <div class="img-arrow-container col-lg-6 d-flex justify-content-center">
                             <div class="title-and-img mb-0 mb-lg-5">
-                                <h3>
+                                <h3 class="mt-4 mt-lg-0">
                                     Mensajería
                                 </h3>
                                 <img src="styles/images/mensajeria.avif" alt="" class="mb-0 mb-lg-3">
@@ -208,5 +212,6 @@
         </div>
     </div>
     <script src="scripts/js/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
