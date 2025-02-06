@@ -6,9 +6,10 @@
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 200px;
     position: absolute;
-    left: 50%;
+    left: 44%;
     transform: translateX(-50%);
     align-content: end;
+
 }
 .logo-matius img{
     margin-top: 45%;
@@ -218,6 +219,62 @@
 .we-are-text-container{
     margin-top: 7%;
 }
+
+/* styles.css */
+
+.menu-sticky {
+    position: fixed;
+    width: 100%;
+    background-color: #27844494;
+    backdrop-filter: blur(20px);
+    top: 0;
+    left: 0;
+    z-index: 6000;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.menu-sticky nav{
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.menu-sticky nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.menu-sticky .logo-menu img{
+    width: 15%;
+}
+
+.menu-sticky nav ul li {
+    margin: 0;
+}
+
+.menu-sticky nav ul li a {
+    font-size: 1.2em;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.menu-sticky nav ul li a:hover {
+    background-color: #2dae6584;
+}
+
+.menu-scroll{
+    display: block;
+}
+
+.hidden{
+    opacity: 0;
+}
+
 
 .we-are-text-container{
     color: #6c7d44;

@@ -1,10 +1,14 @@
-// document.addEventListener("scroll", function () {
-//     let menu = document.querySelector(".menu-container");
-//     if (window.scrollY > 200) {
-//         menu.classList.remove("menu-container")
-//         menu.classList.add("menu-scroll"); // Aplica el blur cuando se hace scroll
-//     } else {
-//         menu.classList.remove("menu-scroll"); // Lo quita cuando está arriba
-//         menu.classList.add("menu-container")
-//     }
-// });
+document.addEventListener("scroll", function () {
+    let menu = document.querySelector(".menu-sticky");
+    if (window.scrollY > 450) {
+        menu.classList.remove("animate__fadeOutRight")
+        menu.classList.add("menu-scroll");
+    }
+    else{
+        menu.classList.add("animate__fadeOutRight")
+    }
+    // if(window.scrollY <50) {
+    //     menu.classList.add("animate__fadeOutRight")
+    //     menu.classList.remove("menu-scroll"); 
+    // }
+});

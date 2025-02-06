@@ -6,10 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <div class="container-all">
-        <div class="logo-matius d-lg-block d-none">
+        <div class="logo-matius d-lg-block d-none animate__animated animate__bounceInDown" id="home">
             <img src="styles/images/matius-logo.avif" alt="">
         </div>
         <div class="top-background-container">
@@ -34,7 +38,7 @@
                           </button>
                           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                              <a class="nav-link active" aria-current="page" href="#contact">Inicio</a>
+                              <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
                               <a class="nav-link" href="#weAre">Nosotros</a>
                               <a class="nav-link" href="#services">Servicios</a>
                               <a class="nav-link" href="#contact">Contacto</a>
@@ -88,6 +92,20 @@
                     <img src="styles/images/RecursosPng/Asset 3.png" alt="">
                 </div>
                 <div class="we-are-text-container col-lg-9 ps-5 pe-5" >
+                    <div class="menu-sticky  animate__animated animate__fadeInLeft ">
+                        <nav class="d-flex">
+                            <div class="logo-menu ms-3">
+                                <img src="styles/images/RecursosPng/Asset 8.png" alt="">
+                            </div>
+                            <ul class="d-flex">
+                                <li><a href="#home">Inicio</a></li>
+                                <li><a href="#weAre">Nosotros</a></li>
+                                <li><a href="#services">Servicios</a></li>
+                                <li><a href="#contact">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
                     <div class="we-are-title d-flex">
                         <h4 class="somos">Somos</h4> <h4 class="matius-title ms-2">MATIUS SERVICIOS</h4> 
                     </div>
@@ -224,7 +242,7 @@
             </div>
         </div> 
 
-        <footer class="footer-cont">
+        <footer class="footer-cont" id="contact">
             <div class="footer-text">
                 <div class="h1 d-flex justify-content-center">
                     <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#ffff" d="M10.115 21.811c.606.5 1.238.957 1.885 1.403a27 27 0 0 0 1.885-1.403a28 28 0 0 0 2.853-2.699C18.782 16.877 21 13.637 21 10a9 9 0 1 0-18 0c0 3.637 2.218 6.876 4.262 9.112a28 28 0 0 0 2.853 2.7M12 13.25a3.25 3.25 0 1 1 0-6.5a3.25 3.25 0 0 1 0 6.5"/></svg>
