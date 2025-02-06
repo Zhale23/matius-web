@@ -245,7 +245,7 @@
 }
 
 .street-img img{
-    width: 27.5vh;
+    width: 14%;
     position: absolute;
     z-index: 3;
 }
@@ -398,80 +398,72 @@
     margin-left: 4%;
 }
 
-/*location title*/
+/* CONTENEDOR DEL MAPA */
+.location-container {
+    z-index: 5000;
+    margin: 0 auto;
+    width: 60%;
+    position: relative; /* CAMBIO: Antes era absolute */
+    transform: translate(-0%, 40%); /* Ajusta la superposición */
+}
 
 .location-title{
     justify-content: center;
-}
-
-.location-title h4{
     color: #6c7d44;
-    font-weight: 600;
-    font-size: 1.8em;
 }
 
 .location-title span{
-    font-weight: 100;
     font-size: 1.4em;
-    margin-left: 5px;
-    color: #6c7d44;
-}
-/*estilos del mapa*/
-
-.location-map-container{
-    z-index: 2000;
-    width: 60%;
-    position: absolute;
-    left: 20%;
 }
 
-.location-map-container iframe{
+/* MAPA */
+.location-map-container {
+    width: 100%;
+}
+
+.location-map-container iframe {
     border-radius: 25px;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.31);
     width: 100%;
+    height: 300px; /* Ajusta el tamaño */
 }
 
-/*footer styles*/
-.footer{
-    background-color: #27352c;
-    width: 100%;
-    height: 20vh;
-    position: relative;
-    margin-top: 25%;
-}
-.footer-cont{
+/* FOOTER */
+.footer-cont {
     text-align: center;
     background-color: #27352c;
     width: 100%;
-    display: block;
+    padding-top: 8rem; /* Espacio para que el mapa lo cubra */
+    padding-bottom: 4rem;
+    position: relative;
 }
-.footer-text{
+
+/* TEXTO DEL FOOTER */
+.footer-text {
     text-align: center;
     color: white;
-    height: 60vh;
-    padding-top: 3%;
-    /* align-content: center; */
-
-}
-.h1{
-    align-items: center;
+    align-content: center;
+    padding-top: 4rem; /* Evita que el texto se solape */
 }
 
-.footer-text .text-center{
+.footer-text .text-center {
     font-size: 1.2em;
     font-weight: 700;
 }
 
-.footer-text p{
+.footer-text p {
     margin: 0 auto;
     line-height: 1.5;
     font-size: 1.2em;
 }
 
-.social-media{
-    margin-top: 5%;
+/* REDES SOCIALES */
+.social-media {
+    margin-top: 3rem;
     font-size: 1.4em;
 }
+
+
 /* Sección de servicios responsiva */
 
 @media (max-width: 992px) {
