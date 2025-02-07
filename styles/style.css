@@ -210,6 +210,10 @@
     right: 100px;
 }
 
+.logo-whats:hover{
+    scale: 1.15;
+}
+
 /*we are Matius styles*/
 .we-are-container{
     background-color: #e5ffbd;
@@ -229,9 +233,8 @@
     backdrop-filter: blur(20px);
     top: 0;
     left: 0;
-    z-index: 6000;
+    z-index: 4;
     display: none;
-    transition: opacity 0.5s ease;
 }
 
 .menu-sticky nav{
@@ -247,7 +250,7 @@
 }
 
 .menu-sticky .logo-menu img{
-    width: 15%;
+    width: 50px;
 }
 
 .menu-sticky nav ul li {
@@ -270,11 +273,6 @@
 .menu-scroll{
     display: block;
 }
-
-.hidden{
-    opacity: 0;
-}
-
 
 .we-are-text-container{
     color: #6c7d44;
@@ -404,6 +402,14 @@
     border-radius: 25px;
 }
 
+.title-and-img img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 40px rgba(2, 64, 19, 0.723);
+
+}
+
 .title-and-img h3{
     font-weight: 200;
     color: #17a454;
@@ -457,7 +463,7 @@
 
 /* CONTENEDOR DEL MAPA */
 .location-container {
-    z-index: 5000;
+    z-index: 3;
     margin: 0 auto;
     width: 60%;
     position: relative; /* CAMBIO: Antes era absolute */
@@ -491,7 +497,7 @@
     background-color: #27352c;
     width: 100%;
     padding-top: 8rem; /* Espacio para que el mapa lo cubra */
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
     position: relative;
 }
 
