@@ -77,7 +77,7 @@
     width: 95%;
 }
 
-/* .menu-scroll{
+.menu-scroll{
     position: absolute; 
     top: 0;
     width: 100%;
@@ -87,7 +87,7 @@
     backdrop-filter: blur(10px);
     background-color: rgba(62, 128, 76, 0.5);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-} */
+} 
 
 .offcanvas-end {
     background-color: rgb(62, 128, 76);
@@ -130,6 +130,9 @@
     border: none;
     outline: none;
     background-color: transparent;
+}
+.offcanvas{
+    width: 40%;
 }
 
 .navar-toggler:hover{
