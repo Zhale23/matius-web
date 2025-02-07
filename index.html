@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Matiusservicios</title>
     <link rel="stylesheet" href="styles/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link
@@ -45,8 +45,8 @@
                             </div>
                           </div>
                           <div class="logo d-block d-lg-none">
-                            <img src="styles/images/matius-logo.avif" alt="">
-                        </div>
+                                <img src="styles/images/matius-logo.avif" alt="">
+                            </div>
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
@@ -99,12 +99,30 @@
                             <div class="logo-menu ms-3">
                                 <img src="styles/images/RecursosPng/Asset 8.png" alt="">
                             </div>
-                            <ul class="d-flex">
-                                <li><a href="#start">Inicio</a></li>
-                                <li><a href="#weAre">Nosotros</a></li>
-                                <li><a href="#services">Servicios</a></li>
-                                <li><a href="#contact">Contacto</a></li>
-                            </ul>
+                            <button class="navbar-toggler d-sm-none d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" viewBox="0 0 24 24">
+                                  <g fill="none" stroke="#fff" stroke-dasharray="16" stroke-dashoffset="16" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                    <path d="M5 5h14">
+                                      <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="16;0" />
+                                    </path>
+                                    <path d="M5 12h14">
+                                      <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.3s" values="16;0" />
+                                    </path>
+                                    <path d="M5 19h14">
+                                      <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.3s" values="16;0" />
+                                    </path>
+                                  </g>
+                                </svg>
+                              </button>
+                              <div class="list-menu d-none d-sm-block">
+                                <ul class="d-flex">
+                                    <li><a href="#start">Inicio</a></li>
+                                    <li><a href="#weAre">Nosotros</a></li>
+                                    <li><a href="#services">Servicios</a></li>
+                                    <li><a href="#contact">Contacto</a></li>
+                                </ul>
+                              </div>
+
                         </nav>
                     </div>
 
