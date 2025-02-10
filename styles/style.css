@@ -1,3 +1,8 @@
+*{
+    font-family: "Lexend", serif;
+
+}
+
 
 .logo-matius{
     background-color: white;
@@ -60,8 +65,8 @@
 /*navbar styles*/
 .nav-link{
     color: #fff;
-    font-size: 1.15em;
-    font-weight: 400;
+    font-size: 1.2em;
+    font-weight: 300;
     margin-right: 10px;
 }
 
@@ -72,9 +77,13 @@
 }
 
 .menu-container{
-    padding-top: 55px;
+    padding-top: 25px;
+    padding-bottom: 20px;
     margin: 0 auto;
-    width: 95%;
+    background-color: rgba(25, 79, 48, 0.463);
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .menu-scroll{
@@ -164,6 +173,9 @@
     width: 160px;
     font-weight: 300;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.351);
+    font-family: "Lexend", serif;
+    font-size: 1.5em;
+
 }
 
 .services-container {
@@ -185,8 +197,9 @@
 }
 .service span{
     color: white;
-    font-size: 1.09em;
+    font-size: 1.3em;
     font-weight: 300;
+    font-family: "Lexend", serif;
 }
 .service img{
     width: 44px;
@@ -199,9 +212,11 @@
 .s2 img{
     width: 40px;
 }
-.s1, .s2{
-    border-right: 1px solid white;
+.s2, .s3{
+    border-left: 1px solid white;
+
 }
+
 
 /*whatsAppp icon styles*/
 .logo-whats{
