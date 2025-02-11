@@ -7,22 +7,20 @@
 .logo-matius{
     background-color: white;
     text-align: center;
-    width: 13vw;
+    width: 10vw;
     border-bottom-right-radius: 200px;
     border-bottom-left-radius: 200px;
     position: absolute;
-    left: 4%;
+    left: 44%;
     transform: translateX(-50%);
     align-content: end;
-    padding-left: 10px;
-    padding-right: 10px;
 
 }
 .logo-matius img{
-    margin-top: 30%;
-    width: 100%;
+    margin-top: 45%;
+    width: 75%;
     height: auto;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
 }
 
 .logo{
@@ -55,6 +53,7 @@
 .menu-services-container{
     background-image: url('images/RecursosPng/Asset 11.png');
     width: 91.5%;
+    height: 89%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -68,23 +67,23 @@
     color: #fff;
     font-size: 1.2em;
     font-weight: 300;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .nav-link:hover{
     scale: 1.1;
-    background-color: #27352c90;
+    border-bottom: 2px solid green;
+    color: rgb(9, 17, 132);
 }
 
 .menu-container{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin: 0 auto;
     background-color: rgba(25, 79, 48, 0.463);
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    justify-items: center;
-    padding-left: 8%;
 }
 
 .menu-scroll{
@@ -149,54 +148,17 @@
     scale: 1.2;
 }
 
-.under-menu{
-    background-color: #02a652;
-    width: 100%;
-    text-align: center;
-    padding: 7px;
-    color: #ffffff;
-    font-size: 1.1em;
-    font-weight: 500;
-    display: flex;
-    justify-content: space-between;
-    z-index: 4;
-}
-.under-menu-2{
-    background-color: #02a6517e;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    color: #ffffff;
-    font-size: 1.2em;
-    font-weight: 500;
-    display: flex;
-    justify-content: space-between;
-    z-index: 4;
-}
-
-.políticas{
-    background-color: #0b7430aa;
-    font-weight: 400;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.políticas:hover{
-    background-color: #125d2cd3;
-    scale: 1.05;
-    cursor: pointer;
-}
-
-
 /*services title container*/
 
 .services-start-title{
     text-align: center;
     background-color: rgba(47, 72, 58, 0.647);
+    height: 35.1%;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    margin-top: 50vh;
-    padding-bottom: 1%;
+    margin-top: 40vh;
+    padding-bottom: 2%;
+
 }
 .services-start-title h5{
     background-color: #17a454;
@@ -209,7 +171,7 @@
     z-index: 1;
     margin: 0 auto; 
     width: 160px;
-    font-weight: 400;
+    font-weight: 300;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.351);
     font-family: "Lexend", serif;
     font-size: 1.5em;
@@ -221,7 +183,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 1% auto;
+    margin: 2% auto;
 }
 /*services icons styles*/
 .service{
@@ -231,22 +193,25 @@
     width: 100%;
     max-width: 250px;
     text-align: center;
-    }
+    margin-bottom: 15px;
+}
 .service span{
     color: white;
-    font-size: 1.25em;
+    font-size: 1.3em;
     font-weight: 300;
     font-family: "Lexend", serif;
 }
 .service img{
-    width: 38px;
+    width: 44px;
     padding-bottom: 2px;
 }
 .s3 img{
-    margin-top: 5px;
-    width: 50px;
+    margin-top: 1.5px;
+    width: 58px;
 }
-
+.s2 img{
+    width: 40px;
+}
 .s2, .s3{
     border-left: 1px solid white;
 
