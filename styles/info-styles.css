@@ -1,0 +1,251 @@
+*{
+    font-family: "Lexend", serif;
+
+}
+
+
+.logo-matius{
+    background-color: white;
+    text-align: center;
+    width: 13vw;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    position: absolute;
+    left: 4%;
+    transform: translateX(-50%);
+    align-content: end;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 6;
+
+}
+.logo-matius img{
+    margin-top: 30%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.logo{
+    text-align: end;
+    width: 70%;
+}
+
+.logo img{
+    width: 35%;
+    border: solid rgb(255, 255, 255) 10px;
+    border-radius: 100px;
+}
+
+/*navbar styles*/
+.nav-link{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-right: 30px;
+}
+
+.nav-link:hover{
+    scale: 1.1;
+    background-color: #27352c90;
+}
+
+.menu-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(11, 121, 58);
+    width: 100%;
+    justify-items: center;
+    padding-left: 8%;
+    position: fixed;
+    display: block;
+    z-index: 5;
+}
+
+
+.offcanvas-end {
+    background-color: rgb(62, 128, 76);
+    color: white;
+    padding: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/*offcanvas menu styles*/
+.offcanvas .navbar-nav .nav-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.offcanvas .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.offcanvas-header {
+    background-color: rgb(62, 128, 76);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.offcanvas-title {
+    color: white;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.navar-toggler {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.offcanvas{
+    width: 50%;
+}
+
+.navar-toggler:hover{
+    scale: 1.2;
+}
+
+
+
+
+/*whatsAppp icon styles*/
+.logo-whats{
+    position: fixed;
+    cursor: pointer;
+    width: 75px;
+    z-index: 2;
+    bottom: 10px;
+    right: 100px;
+}
+
+.logo-whats:hover{
+    scale: 1.15;
+}
+
+/*we are Matius styles*/
+.we-are-container{
+    background-color: #e5ffbd;
+    padding-bottom: 3%;
+}
+
+.we-are-text-container{
+    margin-top: 7%;
+}
+
+.we-are-text-container{
+    color: #6c7d44;
+    justify-items: center;
+}
+.we-are-text-container p{
+    text-align: justify;
+    margin-top: 5%;
+    letter-spacing: 0px;
+    font-size: 1.2em;
+    line-height: 1.25;
+}
+.we-are-title{
+    padding-bottom: 4%;
+    justify-content: center;
+}
+.somos{
+    font-weight: 300;
+}
+.border-bottom{
+    background-color: #6c7d44;
+    height: 0.5vh;
+    width: 200px;
+    border-radius: 50px;
+}
+
+.matius-title{
+    font-weight: 600;
+}
+
+.street-img img{
+    width: 14%;
+    position: absolute;
+    z-index: 3;
+}
+
+/* CONTENEDOR DEL MAPA */
+.location-container {
+    z-index: 3;
+    margin: 0 auto;
+    width: 60%;
+    position: relative; /* CAMBIO: Antes era absolute */
+    transform: translate(-0%, 40%); /* Ajusta la superposición */
+}
+
+.location-title{
+    justify-content: center;
+    color: #6c7d44;
+}
+
+.location-title span{
+    font-size: 1.4em;
+}
+
+/* MAPA */
+.location-map-container {
+    width: 100%;
+}
+
+.location-map-container iframe {
+    border-radius: 25px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.31);
+    width: 100%;
+    height: 300px; /* Ajusta el tamaño */
+}
+
+/* FOOTER */
+.footer-cont {
+    text-align: center;
+    background-color: #27352c;
+    width: 100%;
+    padding-top: 8rem; /* Espacio para que el mapa lo cubra */
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+/* TEXTO DEL FOOTER */
+.footer-text {
+    text-align: center;
+    color: white;
+    align-content: center;
+    padding-top: 4rem; /* Evita que el texto se solape */
+}
+
+.footer-text .text-center {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.footer-text p {
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+/* REDES SOCIALES */
+.social-media {
+    margin-top: 3rem;
+    font-size: 1.4em;
+}
+
+
+/* Sección de servicios responsiva */
+
+@media (max-width: 992px) {
+    .we-are-text-container {
+        padding-bottom: 5%;
+    }
+}
+
