@@ -17,6 +17,7 @@
     padding-left: 10px;
     padding-right: 10px;
     z-index: 6;
+    box-shadow: 0px 0px 30px #27352c;
 
 }
 .logo-matius img{
@@ -60,6 +61,8 @@
     position: fixed;
     display: block;
     z-index: 5;
+    box-shadow: 0px 0px 30px #27352c;
+
 }
 
 
@@ -114,6 +117,41 @@
 }
 
 
+.portada-container{
+    padding-top: 5%;
+    width: 100%;
+}
+
+.container-img-text{
+    background-color: #15a751;
+    background-image: url('images/green-group-gradient.png');
+    box-shadow: 0px 20px 30px #04532058;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 45vh;
+    width: 100%;
+    align-items: end;
+    text-align: start;
+    align-content: center;
+    margin: 10% auto;
+
+}
+
+.container-img-text h1{
+    font-size: 3.5em;
+    padding-left: 5%;
+    color: white;
+}
+.container-img-text svg{
+    margin-left: 20%;
+    color: rgb(131, 231, 158);
+}
+.container-img-text img{
+    width: 50%;
+}
+
+
 
 
 /*whatsAppp icon styles*/
@@ -157,6 +195,7 @@
 }
 .somos{
     font-weight: 300;
+    font-size: 2em;
 }
 .border-bottom{
     background-color: #6c7d44;
@@ -167,6 +206,13 @@
 
 .matius-title{
     font-weight: 600;
+    font-size: 2em;
+
+}
+.matius-title-2{
+    font-weight: 600;
+    font-size: 1.2em;
+
 }
 
 .street-img img{
@@ -246,6 +292,23 @@
 @media (max-width: 992px) {
     .we-are-text-container {
         padding-bottom: 5%;
+    }
+    .container-img-text{
+        background-image: url('images/vertical-green-gradient-2.png');
+        background-position: center;
+        background-size: cover;
+        align-content: normal;
+        text-align: center;
+        margin-top: 15vh;
+    }
+    .container-img-text h1{
+        padding-top: 5%;
+        padding-left: 0;
+        font-size: 2em;
+    }
+    .container-img-text svg{
+        margin: 0;
+        width: 60px;
     }
 }
 
