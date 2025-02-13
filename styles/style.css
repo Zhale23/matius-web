@@ -166,7 +166,6 @@
     font-weight: 500;
     display: flex;
     justify-content: space-between;
-    z-index: 4;
 }
 
 .políticas{
@@ -273,7 +272,7 @@
     backdrop-filter: blur(20px);
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 1;
     display: none;
 }
 
@@ -474,7 +473,7 @@
 
 /* CONTENEDOR DEL MAPA */
 .location-container {
-    z-index: 3;
+    z-index: 0;
     margin: 0 auto;
     width: 60%;
     position: relative; /* CAMBIO: Antes era absolute */
@@ -510,6 +509,7 @@
     padding-top: 8rem; /* Espacio para que el mapa lo cubra */
     padding-bottom: 6rem;
     position: relative;
+    z-index: -1;
 }
 
 /* TEXTO DEL FOOTER */
@@ -556,5 +556,39 @@
     .logo{
         text-align: end;
     }
+    .service img{
+        width: 25%;
+        padding-bottom: 2px;
+    }
+    .s3 img{
+        margin-top: 5px;
+        width: 35%;
+    }
+
 }
+
+@media (max-width: 576px){
+    .logo img{
+        width: 24%;
+    }
+}
+
+
+@media (max-width: 556px){
+
+    .services-start-title{
+        margin-top: 25vh;
+    }
+}
+@media (min-width: 1000px){
+    .service img{
+        width: 30%;
+        padding-bottom: 2px;
+    }
+    .s3 img{
+        margin-top: 5px;
+        width: 40%;
+    }
+}
+
 
