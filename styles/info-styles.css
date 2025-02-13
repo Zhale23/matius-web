@@ -310,5 +310,15 @@
         margin: 0;
         width: 60px;
     }
+    
+    .logo img{
+        width: 20%;
+        border: solid rgb(255, 255, 255) 5px;
+
+    }
+    .we-are-title{
+        text-align: center;
+    }
+
 }
 

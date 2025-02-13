@@ -550,5 +550,11 @@
     .service{
         border: none;
     }
+    .logo img{
+        width: 35%;
+    }
+    .logo{
+        text-align: end;
+    }
 }
 
