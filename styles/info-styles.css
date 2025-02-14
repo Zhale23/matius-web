@@ -214,42 +214,17 @@
     z-index: 3;
 }
 
-/*cinta*/
-.cinta-contenedor {
-    width: 100%;
-    overflow: hidden;
-    background: #84d577;
-    padding: 10px 0;
-}
-
-.cinta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(200% + 20px);
-    animation: deslizamiento 10s linear infinite;
-}
-
-.cinta svg {
-    width: 50px;
-    height: 50px;
-    margin: 0 10px;
-}
-
-@keyframes deslizamiento {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(50%);
-    }
-}
-
 /*misión y visión styles*/
 
 .mision-vision-container{
-    background-color: #166e35 ;
+    background-color: #ffffff;
+    border: solid 2px #0c943c;
     margin-top: 10%;
+    color: #6c7d44;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    width: 80%;
+    border-radius: 20px;
 }
 .mision-vision-container .row{
     align-items: center;
@@ -257,8 +232,19 @@
 }
 
 .mision-vision-img-container img {
-    width: 60%;
+    width: 100%;
     border-radius: 20px;
+}
+
+.mision-vision-text-container h4{
+    font-size: 2em;
+    color: #168125;
+    font-weight: 600;
+}
+
+
+.mision-vision-text-container p{
+    font-size: 1.2em;
 }
 
 .mision-vision-img-container{
