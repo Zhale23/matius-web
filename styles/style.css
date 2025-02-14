@@ -23,6 +23,10 @@
     margin-bottom: 10%;
 }
 
+.logo{
+    width: 18%;
+}
+
 .top-background-container{
     background-image: url('images/background-blur.jpg');
     background-size: cover;
@@ -30,7 +34,7 @@
     background-position: center;
     position: relative;
     justify-items: center;
-
+    padding-bottom: 20px;
 }
 
 /* Menu Services Container Styles */
@@ -38,31 +42,37 @@
     position: relative;
     width: 90%;
     height: 100vh;
-    overflow: hidden;
     align-items: center;
     justify-content: center;
-    padding-top: 2%;
+    /* overflow: hidden; */
 }
 
-.menu-services-container video {
-    position: absolute;
+.video-wrapper {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    z-index: 0;
-    padding-bottom: 4%;
-
+    border-radius: 20px;  /* Bordes redondeados */
+    overflow: hidden;  /* Oculta lo que sobresalga */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ajuste perfecto sin deformación */
+}
+
 
 .menu-container{
     position: relative;
     z-index: 1;
     width: 100%;
     padding: 15px;
-    background-color: rgba(25, 79, 48, 0.7);
-    border-radius: 10px;
+    background-color: rgba(25, 79, 48, 0.52);
     display: flex;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     justify-content: center;
 }
 
@@ -136,6 +146,10 @@
 .offcanvas{
     width: 50%;
 }
+.offcanvas {
+    z-index: 1050 !important; /* Bootstrap usa 1045, lo aumentamos */
+}
+
 
 .navar-toggler:hover{
     scale: 1.2;
@@ -189,7 +203,6 @@
 
 .services-start-title{
     text-align: center;
-    background-color: rgba(47, 72, 58, 0.647);
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     margin-top: 45vh;
@@ -486,7 +499,7 @@
 }
 
 .location-title span{
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 /* MAPA */
@@ -528,15 +541,21 @@
 .footer-text p {
     margin: 0 auto;
     line-height: 1.5;
-    font-size: 1.2em;
+    font-size: 1.35em;
 }
 
 /* REDES SOCIALES */
 .social-media {
     margin-top: 3rem;
-    font-size: 1.4em;
+    font-size: 1.6em;
+}
+.cellphone, .email{
+    font-size: 1.45em;
 }
 
+.cellphone{
+    margin-top: 2rem;
+}
 
 /* Sección de servicios responsiva */
 
@@ -550,12 +569,6 @@
     .service{
         border: none;
     }
-    .logo img{
-        width: 35%;
-    }
-    .logo{
-        text-align: end;
-    }
     .service img{
         width: 25%;
         padding-bottom: 2px;
@@ -567,15 +580,7 @@
 
 }
 
-@media (max-width: 576px){
-    .logo img{
-        width: 24%;
-    }
-}
-
-
 @media (max-width: 556px){
-
     .services-start-title{
         margin-top: 25vh;
     }

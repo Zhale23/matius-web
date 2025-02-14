@@ -28,14 +28,7 @@
 }
 
 .logo{
-    text-align: end;
-    width: 70%;
-}
-
-.logo img{
-    width: 35%;
-    border: solid rgb(255, 255, 255) 10px;
-    border-radius: 100px;
+    width: 18%;
 }
 
 /*navbar styles*/
@@ -221,6 +214,59 @@
     z-index: 3;
 }
 
+/*cinta*/
+.cinta-contenedor {
+    width: 100%;
+    overflow: hidden;
+    background: #84d577;
+    padding: 10px 0;
+}
+
+.cinta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(200% + 20px);
+    animation: deslizamiento 10s linear infinite;
+}
+
+.cinta svg {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+@keyframes deslizamiento {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+/*misión y visión styles*/
+
+.mision-vision-container{
+    background-color: #166e35 ;
+    margin-top: 10%;
+}
+.mision-vision-container .row{
+    align-items: center;
+    justify-content: center;
+}
+
+.mision-vision-img-container img {
+    width: 60%;
+    border-radius: 20px;
+}
+
+.mision-vision-img-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* CONTENEDOR DEL MAPA */
 .location-container {
     z-index: 3;
@@ -310,12 +356,7 @@
         margin: 0;
         width: 60px;
     }
-    
-    .logo img{
-        width: 20%;
-        border: solid rgb(255, 255, 255) 5px;
 
-    }
     .we-are-title{
         text-align: center;
     }
