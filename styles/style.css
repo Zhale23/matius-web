@@ -458,8 +458,8 @@
 
 .info li, p{
     font-weight: 350;
-    font-size: 1.08em;
-    line-height: 1;
+    font-size: 1em;
+    line-height: 1.2;
     width: 90%;
 }
 
@@ -467,8 +467,9 @@
     text-align: justify;
 }
 
-.list{
-    line-height: 0.9;
+.bold{
+    font-weight: bold;
+    color: #17a454;
 }
 
 .info li::marker {
@@ -594,6 +595,9 @@
         margin-top: 5px;
         width: 40%;
     }
+    /* .offcanvas-body{
+        padding-top: 50%;
+    } */
 }
 
 
