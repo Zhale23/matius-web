@@ -379,7 +379,29 @@
     transition: 0.2s;
 }
 
-
+/*modales de las cards*/
+.politicas-container .modal{
+    font-size: 1em;
+}
+.bold{
+    font-weight: bold;
+    color: #12a445;
+}
+.att{
+    font-size: 1.15em;
+    font-weight: 600;
+}
+.modal-header h2{
+    color: #12a445;
+    font-weight: 600;
+}
+.modal-footer .download{
+    background-color: #2bb446;
+    color: white;
+}
+.modal-footer .download:hover{
+    background-color: #228f38;
+}
 /* CONTENEDOR DEL MAPA */
 .location-container {
     z-index: 3;
@@ -473,6 +495,22 @@
     .we-are-title{
         text-align: center;
     }
-
+    .sst, .prevencion-adicciones{
+        margin-top: 10%;
+    }
+    .location-title{
+        flex-direction: column;
+    }
+    .tarjeta-front h3{
+        font-size: 1em;
+    }
+    .tarjeta-back {
+        font-size: 0.9em;
+        flex-direction: column;
+    }
+    /* }
+    .icono{
+        width: 35px;
+    } */
 }
 
