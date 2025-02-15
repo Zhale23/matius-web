@@ -261,7 +261,7 @@
     width: 80%;
     margin: 0 auto;
 }
-.valores-text-container h4{
+.section-title{
     font-size: 2.5em;
     font-weight: 600;
     color: #168125;
@@ -355,6 +355,31 @@
         font-size: 40px;
     }
 }
+
+/*sección de políticas cards styles*/
+.politicas-container{
+    width: 80%;
+    margin: 10% auto;
+}
+.politicas-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 5% auto;
+}
+.card{
+    background-color:rgb(218, 229, 213) ;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color:rgb(199, 208, 194) ;
+    transition: 0.2s;
+}
+
+
 /* CONTENEDOR DEL MAPA */
 .location-container {
     z-index: 3;
