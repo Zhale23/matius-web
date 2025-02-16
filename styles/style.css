@@ -219,7 +219,7 @@
 }
 .company-title h2{
     font-size: 4em;
-    font-weight: 600;
+    font-weight: 500;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.798);
 }
 
@@ -467,8 +467,26 @@
 
 .bold{
     font-weight: bold;
-    color: #17a454;
+    color: #0f8944;
 }
+
+.services-cards .modal{
+    font-size: 1em;
+}
+.info .btn{
+    background-color: #2e9d44;
+    color: white;
+
+}
+
+.info .btn:hover{
+    background-color: #1b712c;
+}
+.modal-header h2{
+    color: #12a445;
+    font-weight: 600;
+}
+
 
 .info li::marker {
     font-size: 0.6em; /* Ajustar el tamaño de la viñeta */
@@ -565,23 +583,31 @@
     .service{
         border: none;
     }
-    .service img{
-        width: 20%;
-        padding-bottom: 2px;
-    }
-    .s3 img{
-        margin-top: 5px;
-        width: 30%;
-    }
-    .company-title h2{
-        font-size: 2.5em;
-    }
+
 
 }
 
 @media (max-width: 556px){
     .services-start-title{
+        margin-top: 8vh;
+    }
+    .service img{
+        width: 15%;
+        padding-bottom: 2px;
+    }
+    .s3 img{
+        margin-top: 5px;
+        width: 20%;
+    }
+    .company-title h2{
+        font-size: 2.5em;
         margin-top: 10vh;
+    }
+    .service span{
+        font-size: 1.1em;
+    }
+    .service{
+        padding-top: 10%;
     }
 }
 @media (min-width: 1000px){
@@ -596,6 +622,15 @@
     /* .offcanvas-body{
         padding-top: 50%;
     } */
+
+    .service img{
+        width: 20%;
+        padding-bottom: 2px;
+    }
+    .s3 img{
+        margin-top: 5px;
+        width: 25%;
+    }
 }
 
 

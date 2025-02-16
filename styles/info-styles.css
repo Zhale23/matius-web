@@ -395,13 +395,7 @@
     color: #12a445;
     font-weight: 600;
 }
-.modal-footer .download{
-    background-color: #2bb446;
-    color: white;
-}
-.modal-footer .download:hover{
-    background-color: #228f38;
-}
+
 /* CONTENEDOR DEL MAPA */
 .location-container {
     z-index: 3;
