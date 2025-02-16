@@ -116,36 +116,44 @@
 }
 
 .container-img-text{
-    background-color: #15a751;
-    background-image: url('images/green-group-gradient.png');
-    box-shadow: 0px 20px 30px #04532058;
+    background-color: #027728;
+    background-image: url('images/equipo-matius.jpg');
     background-position: right;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 45vh;
+    background-size: cover;
+    height: 50vh;
     width: 100%;
     align-items: end;
-    text-align: start;
+    text-align: center;
     align-content: center;
-    margin: 10% auto;
-
+    margin: 0 auto;
+    margin-top: 8%;
+    text-shadow:  5px 0px 2px #000000;
 }
 
 .container-img-text h1{
     font-size: 3.5em;
-    padding-left: 5%;
     color: white;
 }
-.container-img-text svg{
-    margin-left: 20%;
-    color: rgb(131, 231, 158);
+
+.arrow{
+    width: 100%;
+    text-align: center;
+    margin-top: 4%;
+    animation: down 0.8s infinite;
 }
-.container-img-text img{
-    width: 50%;
+
+@keyframes down{
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
-
-
-
 
 /*whatsAppp icon styles*/
 .logo-whats{

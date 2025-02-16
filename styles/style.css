@@ -604,10 +604,17 @@
         margin-top: 10vh;
     }
     .service span{
-        font-size: 1.1em;
+        font-size: 1em;
     }
     .service{
-        padding-top: 10%;
+        padding-top: 6%;
+    }
+    .social-media {
+        margin-top: 3rem;
+        font-size: 1.4em;
+    }
+    .cellphone, .email{
+        font-size: 1.25em;
     }
 }
 @media (min-width: 1000px){
