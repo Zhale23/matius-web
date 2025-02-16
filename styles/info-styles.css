@@ -477,7 +477,7 @@
         padding-bottom: 5%;
     }
     .container-img-text{
-        background-image: url('images/vertical-green-gradient-2.png');
+        background-image: url('images/equipo-matius.jpg');
         background-position: center;
         background-size: cover;
         align-content: normal;
@@ -487,7 +487,7 @@
     .container-img-text h1{
         padding-top: 5%;
         padding-left: 0;
-        font-size: 2em;
+        font-size: 2.1em;
     }
     .container-img-text svg{
         margin: 0;
