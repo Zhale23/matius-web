@@ -1,6 +1,6 @@
 document.addEventListener("scroll", function () {
     let menu = document.querySelector(".menu-sticky");
-    if (window.scrollY > 460) {
+    if (window.scrollY > 50) {
         menu.classList.remove("animate__fadeOutRight")
         menu.classList.add("menu-scroll");
     }
@@ -49,3 +49,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
