@@ -1,8 +1,28 @@
-*{
+* {
     font-family: "Lexend", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.logo-matius{
+body {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.logo-matius {
+    background-color: white;
+    text-align: center;
+    /* width: clamp(150px, 13vw, 300px); */
+    width: 14vw;
+    border-radius: 0 0 200px 200px;
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%);
+    padding: 15px;
+    z-index: 1;
+}
+/* .logo-matius{
     background-color: white;
     text-align: center;
     width: 13vw;
@@ -15,8 +35,19 @@
     padding-left: 10px;
     padding-right: 10px;
     z-index: 2;
+} */
+
+
+.logo-matius img {
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
 }
-.logo-matius img{
+
+.logo {
+    width: 30%;
+}
+/* .logo-matius img{
     margin-top: 30%;
     width: 100%;
     height: auto;
@@ -25,9 +56,18 @@
 
 .logo{
     width: 18%;
+} */
+
+.top-background-container {
+    background-image: url('images/background-blur.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding-bottom: 50px;
 }
 
-.top-background-container{
+/* .top-background-container{
     background-image: url('images/background-blur.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,23 +75,53 @@
     position: relative;
     justify-items: center;
     padding-bottom: 20px;
-}
+} */
 
 /* Menu Services Container Styles */
-.menu-services-container{
+
+.menu-services-container {
+    position: relative;
+    width: 90%;
+    height: 85vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2%;
+
+}
+/* .menu-services-container{
     position: relative;
     width: 90%;
     height: 100%;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
-}
+} */
 
 .video-wrapper {
     width: 100%;
     height: 100%;
-    border-radius: 20px;  /* Bordes redondeados */
-    overflow: hidden;  /* Oculta lo que sobresalga */
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 5%;
+    left: 0;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .video-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;  
+    overflow: hidden;  
     position: absolute;
     top: 0;
     left: 0;
@@ -60,34 +130,50 @@
 .video-wrapper video {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* Ajuste perfecto sin deformación */
+    object-fit: cover;  
+} */
+
+.menu-container {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-
-.menu-container{
+/* .menu-container{
     position: relative;
     z-index: 1;
     width: 100%;
     padding: 15px;
-    /* background-color: rgba(25, 79, 48, 0.52); */
     display: flex;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    justify-content: end;
+    justify-content: end; */
+/* } */
+
+
+.nav-link {
+    color: #fff;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 500;
+    margin-right: 20px;
+    text-shadow: 0 0 10px black;
+    border-radius: 15px;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
-.nav-link{
+/* .nav-link{
     color: #fff;
     font-size: 1.5em;
     font-weight: 500;
     margin-right: 30px;
     text-shadow: 0px 0px 10px black;
     border-radius: 25px;
-}
+} */
 
-.nav-link:hover{
-    scale: 1.1;
-    background-color: #088e3753;
+.nav-link:hover {
+    transform: scale(1.1);
+    background-color: rgba(8, 142, 55, 0.55);
 }
 
 
@@ -147,9 +233,13 @@
 .offcanvas {
     z-index: 1050 !important; /* Bootstrap usa 1045, lo aumentamos */
 }
-
-
-.navar-toggler:hover{
+ 
+.button{
+    width: 80vw;
+    justify-content: space-between;
+    display: flex;
+}
+.navbar-toggler:hover{
     scale: 1.2;
 }
 
@@ -189,59 +279,74 @@
 
 .políticas:hover{
     background-color: #125d2cd3;
-    scale: 1.05;
+    scale: 1.1;
     cursor: pointer;
     color: #02a652;
 }
 
 
-/*services title container*/
-
-/* .services-start-title{
-    text-align: center;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    margin-top: 0;
-    padding-bottom: 5%;
-} */
-/* .company-title {
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    margin: 5% auto;
-    border-radius: 10px;
-    width: 80%;
-    position: relative;
-}
-.company-title h2{
-    font-size: 4em;
-    font-weight: 500;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.798);
-} */
 
 .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: red;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.service {
+    background-color: rgba(39, 53, 44, 0.56);
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px;
+    flex: 1 1 calc(33% - 20px);
+    /* max-width: 250px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .services-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 25%;
     padding-bottom: 3%;
-    /* background-color: #27352c; */
+    flex-direction: column;
+
 }
-/*services icons styles*/
+
 .service{
     background-color: #27352c8e;
     border-radius: 25px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 25%;
-    /* max-width: 250px; */
     text-align: center;
-    margin-left: 25px;
+} */
 
+.service span {
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
 }
-.service span{
+
+.service img {
+    width: 30%;
+    max-width: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+    margin: 0 auto;
+}
+
+.service img:hover {
+    transform: scale(1.2);
+}
+/* .service span{
     color: white;
     font-size: 1.25em;
     font-weight: 300;
@@ -250,10 +355,10 @@
 .service img{
     width: 20%;
     padding-bottom: 2px;
-}
+} */
 .s3 img{
     margin-top: 5px;
-    width: 25%;
+    max-width: 70px;
 }
 
 
@@ -307,15 +412,16 @@
 
 .menu-sticky nav ul li a {
     font-size: 1.2em;
-    font-weight: 200;
+    font-weight: 400;
     color: white;
     text-decoration: none;
     padding: 10px;
     display: block;
+    border-radius: 15px;
 }
 
 .menu-sticky nav ul li a:hover {
-    background-color: #2dae6584;
+    background-color: #146d3bb4;
 }
 
 .menu-scroll{
@@ -340,15 +446,9 @@
     color: white;
     font-size: 2.5em;
     font-weight: 400;
+    border-bottom: solid white 2px;
 }
-.our-services-title .border-bottom{
-    background-color: #ffffff;
-    border: none;
-    height: 1.7px;
-    width: 14%;
-    margin-top: 1.5%;
 
-}
 .our-services-container{
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -512,7 +612,13 @@
     justify-content: center;
     color: #6c7d44;
 }
-
+.location-container h2{
+    border-right: solid 3px #6c7d44;
+}
+.location-title svg{
+    width: 40px;
+    margin-bottom: 15px;
+}
 .location-title span{
     font-size: 1.6em;
 }
@@ -562,11 +668,14 @@
 /* REDES SOCIALES */
 .social-media {
     margin-top: 3rem;
-    font-size: 1.6em;
+    font-size: clamp(1.2rem, 1.5vw, 1.6rem);
 }
-.cellphone, .email{
-    font-size: 1.45em;
+
+.cellphone, .email {
+    font-size: clamp(1rem, 1.2vw, 1.45rem);
+    margin-top: 2rem;
 }
+
 
 .cellphone{
     margin-top: 2rem;
@@ -578,26 +687,27 @@
     .info {
         font-size: 1em;
     }
+    .location-title{
+        font-size: 1em;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .location-container h2{
+        border-right: none;
+    }
+    .location-title svg{
+        width: 40px;
+        margin-bottom: 15px;
+    }
+
 }
 
 @media (max-width: 556px){
-    .service img{
-        width: 25%;
-        padding-bottom: 2px;
-    }
-    .s3 img{
-        margin-top: 5px;
-        width: 30%;
-    }
+
     .company-title h2{
         font-size: 2.5em;
         margin-top: 10vh;
-    }
-    .service span{
-        font-size: 1em;
-    }
-    .service{
-        padding-top: 6%;
     }
     .social-media {
         margin-top: 3rem;
@@ -606,32 +716,11 @@
     .cellphone, .email{
         font-size: 1.2em;
     }
-}
-@media (min-width: 1000px){
-    /* .service img{
-        width: 30%;
-        padding-bottom: 2px;
+    .footer-cont{
+        padding-top: 40%;
     }
-    .s3 img{
-        margin-top: 5px;
-        width: 40%;
-    } */
-    /* .offcanvas-body{
-        padding-top: 50%;
-    } */
 
-    .service img{
-        width: 20%;
-        padding-bottom: 2px;
-        margin-top: 5px;
-    }
-    .s3 img{
-        margin-top: 5px;
-        width: 25%;
-    }
-    .services-container{
-        flex-wrap: wrap;
-    }
 }
+
 
 

@@ -12,15 +12,15 @@
         </style>
 </head>
 <body>
-    <div class="container-all">
-        <div class="under-menu">
+    <div class="container-all" >
+        <div class="under-menu" id="home">
             <span class="pt-1 ps-2 pe-5">MATIUS SERVICIOS S.A.S</span>
             <a class="políticas" href="info-nosotros.html" >Sobre nosotros</a>
         </div> 
-        <div class="logo-matius d-lg-block d-none animate__animated animate__bounceInDown" id="home">
+        <div class="logo-matius d-lg-block d-none animate__animated animate__bounceInDown" >
             <img src="styles/images/matius-logo.avif" alt="">
         </div>
-        <div class="top-background-container" id="start">
+        <div class="top-background-container">
             <div class="menu-services-container">
                 <div class="video-wrapper">
                     <video autoplay loop muted>
@@ -31,21 +31,26 @@
                 <div class="menu-container">
                     <nav class="navbar navbar-expand-sm bg-body-tertiary">
                         <div class="container-fluid">
-                          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" viewBox="0 0 24 24">
-                              <g fill="none" stroke="#27352cf3" stroke-dasharray="16" stroke-dashoffset="16" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
-                                <path d="M5 5h14">
-                                  <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="16;0" />
-                                </path>
-                                <path d="M5 12h14">
-                                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.3s" values="16;0" />
-                                </path>
-                                <path d="M5 19h14">
-                                  <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.3s" values="16;0" />
-                                </path>
-                              </g>
-                            </svg>
-                          </button>
+                            <div class="button">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="50" viewBox="0 0 24 24">
+                                      <g fill="none" stroke="#27352cf3" stroke-dasharray="16" stroke-dashoffset="16" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                        <path d="M5 5h14">
+                                          <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="16;0" />
+                                        </path>
+                                        <path d="M5 12h14">
+                                          <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.3s" values="16;0" />
+                                        </path>
+                                        <path d="M5 19h14">
+                                          <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.3s" values="16;0" />
+                                        </path>
+                                      </g>
+                                    </svg>
+                                  </button>
+                                  <img src="styles/images/matius-logo.avif" alt="" class="logo d-block d-sm-none">
+
+                            </div>
+
                           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
                               <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
@@ -53,7 +58,6 @@
                               <a class="nav-link" href="#contact">Contacto</a>
                             </div>
                           </div>
-                                <img src="styles/images/matius-logo.avif" alt="" class="logo d-block d-sm-none">
                         <div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
@@ -61,7 +65,7 @@
                             </div>
                             <div class="offcanvas-body">
                                 <div class="navbar-nav flex-column">
-                                    <a class="nav-link" aria-current="page" href="#start">Inicio</a>
+                                    <a class="nav-link" aria-current="page" href="#home">Inicio</a>
                                     <a class="nav-link" href="#services">Servicios</a>
                                     <a class="nav-link" href="#contact">Contacto</a>
                                 </div>
@@ -77,15 +81,15 @@
                     <div class="services-container row">
                         <div class="service s1 col-lg-4 animate__animated animate__slideInLeft">
                             <img src="styles/images/RecursosPng/Asset 6.png" alt="" >
-                            <span>Transporte de <br> carga agroindustrial</span>
+                            <span>Transporte de  carga agroindustrial</span>
                         </div>
                         <div class="service s2 col-lg-4 animate__animated animate__slideInUp">
                             <img src="styles/images/RecursosPng/Asset 5.png" alt="">
-                            <span>Transporte de <br> carga a nivel nacional</span>
+                            <span>Transporte de carga a nivel nacional</span>
                         </div>
                         <div class="service s3 col-lg-4 animate__animated animate__slideInRight">
                             <img src="styles/images/RecursosPng/Asset 4.png" alt="">
-                            <span>Transporte de <br> mensajería</span>
+                            <span class="">Transporte de <br> mensajería</span>
                         </div>
                     </div>
                 </div>
@@ -121,7 +125,7 @@
                               </button>
                               <div class="list-menu d-none d-sm-block"> 
                                 <ul class="d-flex">
-                                    <li><a href="#start">Inicio</a></li>
+                                    <li><a href="#home">Inicio</a></li>
                                     <li><a href="#services">Servicios</a></li>
                                     <li><a href="#contact">Contacto</a></li>
                                 </ul>
@@ -133,8 +137,7 @@
             </div>
         </div>
         <div class="our-services-title" id="services">
-            <h4>Nuestros Servicios</h4>
-            <div class="border-bottom"></div>
+            <h4>Nuestros Servicios</h4> <br>
             </div>
         <div class="our-services-container">
             <div class="our-services-green-div">
@@ -302,12 +305,12 @@
             </div>
         </div>
         <div class="location-container">
-            <div class="location-title d-flex mt-5 mb-3">
-                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="#6c7d44" d="M10.115 21.811c.606.5 1.238.957 1.885 1.403a27 27 0 0 0 1.885-1.403a28 28 0 0 0 2.853-2.699C18.782 16.877 21 13.637 21 10a9 9 0 1 0-18 0c0 3.637 2.218 6.876 4.262 9.112a28 28 0 0 0 2.853 2.7M12 13.25a3.25 3.25 0 1 1 0-6.5a3.25 3.25 0 0 1 0 6.5"/></svg>
+            <div class="location-title d-flex mb-3">
+                <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 24 24"><path fill="#6c7d44" d="M10.115 21.811c.606.5 1.238.957 1.885 1.403a27 27 0 0 0 1.885-1.403a28 28 0 0 0 2.853-2.699C18.782 16.877 21 13.637 21 10a9 9 0 1 0-18 0c0 3.637 2.218 6.876 4.262 9.112a28 28 0 0 0 2.853 2.7M12 13.25a3.25 3.25 0 1 1 0-6.5a3.25 3.25 0 0 1 0 6.5"/></svg>
                 <h2>
-                    Oficina principal   | 
+                    Oficina principal &nbsp;    
                 </h2>
-                <span class="pt-1 ps-2" >
+                <span class="pt-1" > &nbsp;
                     Apartadó, Antioquia
                 </span>
             </div>
