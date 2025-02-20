@@ -22,20 +22,6 @@ body {
     padding: 15px;
     z-index: 1;
 }
-/* .logo-matius{
-    background-color: white;
-    text-align: center;
-    width: 13vw;
-    border-bottom-right-radius: 200px;
-    border-bottom-left-radius: 200px;
-    position: absolute;
-    left: 45%;
-    transform: translateX(-50%);
-    align-content: end;
-    padding-left: 10px;
-    padding-right: 10px;
-    z-index: 2;
-} */
 
 
 .logo-matius img {
@@ -47,16 +33,7 @@ body {
 .logo {
     width: 30%;
 }
-/* .logo-matius img{
-    margin-top: 30%;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10%;
-}
 
-.logo{
-    width: 18%;
-} */
 
 .top-background-container {
     background-image: url('images/background-blur.jpg');
@@ -66,18 +43,6 @@ body {
     position: relative;
     padding-bottom: 40px;
 }
-
-/* .top-background-container{
-    background-image: url('images/background-blur.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    justify-items: center;
-    padding-bottom: 20px;
-} */
-
-/* Menu Services Container Styles */
 
 .menu-services-container {
     position: relative;
@@ -94,13 +59,7 @@ body {
     padding-top: 30px;
 
 }
-/* .menu-services-container{
-    position: relative;
-    width: 90%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-} */
+
 
 .video-wrapper {
     width: 100%;
@@ -117,21 +76,8 @@ body {
     height: 100%;
     object-fit: cover;
 }
-/* .video-wrapper {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;  
-    overflow: hidden;  
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
-.video-wrapper video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  
-} */
+
 
 .menu-container {
     width: 100%;
@@ -139,17 +85,6 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-
-/* .menu-container{
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    justify-content: end; */
-/* } */
 
 
 .nav-link {
@@ -162,14 +97,6 @@ body {
     transition: transform 0.3s, background-color 0.3s;
 }
 
-/* .nav-link{
-    color: #fff;
-    font-size: 1.5em;
-    font-weight: 500;
-    margin-right: 30px;
-    text-shadow: 0px 0px 10px black;
-    border-radius: 25px;
-} */
 
 .nav-link:hover {
     transform: scale(1.1);
@@ -309,25 +236,6 @@ body {
     justify-content: center;
 }
 
-/* .services-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 25%;
-    padding-bottom: 3%;
-    flex-direction: column;
-
-}
-
-.service{
-    background-color: #27352c8e;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    width: 25%;
-    text-align: center;
-} */
 
 .service span {
     color: white;
@@ -346,16 +254,7 @@ body {
 .service img:hover {
     transform: scale(1.2);
 }
-/* .service span{
-    color: white;
-    font-size: 1.25em;
-    font-weight: 300;
-    font-family: "Lexend", serif;
-}
-.service img{
-    width: 20%;
-    padding-bottom: 2px;
-} */
+
 .s3 img{
     margin-top: 5px;
     max-width: 70px;
@@ -467,8 +366,6 @@ body {
     width: 85%;
     margin: 0% auto;
 }
-
-
 
 /*cards styles*/
 
