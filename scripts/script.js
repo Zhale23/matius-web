@@ -7,10 +7,6 @@ document.addEventListener("scroll", function () {
     else{
         menu.classList.add("animate__fadeOutRight")
     }
-    // if(window.scrollY <50) {
-    //     menu.classList.add("animate__fadeOutRight")
-    //     menu.classList.remove("menu-scroll"); 
-    // }
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -26,27 +22,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Cerrar offcanvas y navegar a la sección al hacer clic en un enlace
-    var navLinks = document.querySelectorAll('.offcanvas-body .nav-link');
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+    // var navLinks = document.querySelectorAll('.offcanvas-body .nav-link');
+    // navLinks.forEach(function(link) {
+    //     link.addEventListener('click', function(event) {
+    //         event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
             
-            var targetSection = document.querySelector(this.getAttribute('href'));
+    //         var targetSection = document.querySelector(this.getAttribute('href'));
             
-            var bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasNavbar);
-            if (bsOffcanvas) {
-                bsOffcanvas.hide();
-            }
+    //         var bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasNavbar);
+    //         if (bsOffcanvas) {
+    //             bsOffcanvas.hide();
+    //         }
             
-            if (targetSection) {
-                // Esperar a que el offcanvas se cierre antes de desplazarse
-                setTimeout(function() {
-                    targetSection.scrollIntoView({ behavior: 'smooth' });
-                }, 300); // Ajustar el tiempo si es necesario
-            }
+    //         if (targetSection) {
+    //             // Esperar a que el offcanvas se cierre antes de desplazarse
+    //             setTimeout(function() {
+    //                 targetSection.scrollIntoView({ behavior: 'smooth' });
+    //             }, 300); // Ajustar el tiempo si es necesario
+    //         }
             
-            document.body.style.overflow = 'auto';
-        });
-    });
+    //         document.body.style.overflow = 'auto';
+    //     });
+    // });
 });
 
