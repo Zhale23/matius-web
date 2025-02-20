@@ -32,8 +32,7 @@ body {
 .logo {
     width: 70%;
     max-width: 100px;
-    min-width: 70px;
-    background-color: red;
+    min-width: 50px;
 }
 /*navbar styles*/
 .nav-link{
@@ -55,7 +54,7 @@ body {
     background-color: rgb(11, 121, 58);
     width: 100%;
     justify-items: center;
-    padding-left: 8%;
+    padding-left: 2%;
     position: fixed;
     display: block;
     z-index: 5;
@@ -613,6 +612,9 @@ body {
     }
     .card{
         margin-top: 10%;
+    }
+    .menu-container{
+        justify-content: space-between;
     }
 }
 
